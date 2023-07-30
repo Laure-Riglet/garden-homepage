@@ -1,0 +1,34 @@
+{
+	"content": [
+		{
+			"title": "Discover a world of natural beauty",
+			"description": "Welcome to our garden center, where you can find a diverse selection of trees and plants to transform your outdoor space into a peaceful oasis. Whether you're looking to create a lush garden, add shade to your patio, or enhance the beauty of your landscape, we have the perfect options for you.",
+			"desktop-image": "./src/assets/img/desktop-image-hero-1.webp",
+			"mobile-image": "./src/assets/img/mobile-image-hero-1.webp"
+		},
+		{
+			"title": "Bringing nature's beauty to your doorstep",
+			"description": "Our garden center is dedicated to providing unmatched quality and variety for nature lovers across the country. Our experts combine knowledge and passion to bring your garden vision to life. Create an outdoor space in your own style with our collection and make your property a reflection of your love for nature.",
+			"desktop-image": "./src/assets/img/desktop-image-hero-2.webp",
+			"mobile-image": "./src/assets/img/mobile-image-hero-2.webp"
+		},
+		{
+			"title": "Serving garden enthusiasts worldwide",
+			"description": "With locations spanning the globe, it's easy for you to find the perfect trees for your garden. Locally, we're present in numerous cities throughout the country. Use our store locator to find the nearest branch. Have any questions? Feel free to contact us today.",
+			"desktop-image": "./src/assets/img/desktop-image-hero-3.webp",
+			"mobile-image": "./src/assets/img/mobile-image-hero-3.webp"
+		},
+		{
+			"title": "Nurtured with care and expertise",
+			"description": "Our garden center takes pride in using the best materials and practices to ensure the health and vitality of every tree we offer. With decades of experience in the industry, we understand what trees need to thrive in various environments.",
+			"desktop-image": "./src/assets/img/desktop-image-hero-4.webp",
+			"mobile-image": "./src/assets/img/mobile-image-hero-4.webp"
+		},
+		{
+			"title": "Discover the beauty of our trees",
+			"description": "Our diverse collection includes a variety of trees to suit your garden's needs. Create a landscape that is not only visually stunning but also supports local biodiversity. From classic evergreens to majestic fruit trees, our product specialists are available to help you create your dream garden.",
+			"desktop-image": "./src/assets/img/desktop-image-hero-5.webp",
+			"mobile-image": "./src/assets/img/mobile-image-hero-5.webp"
+		}
+	]
+}
