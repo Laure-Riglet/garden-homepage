@@ -1,10 +1,10 @@
 <script setup>
 defineProps({
-	illustration: {
+	imageUrl: {
 		type: String,
 		required: true,
 	},
-	title: {
+	imageAlt: {
 		type: String,
 		required: true,
 	},
@@ -12,11 +12,22 @@ defineProps({
 </script>
 
 <template>
-	<img :src="illustration" :alt="title" />
+	<img :src="imageUrl" :alt="imageAlt" />
 </template>
 
 <style scoped>
+@keyframes translate {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
 img {
-	object-fit: fill;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	animation: translate 1s ease-in-out;
 }
 </style>

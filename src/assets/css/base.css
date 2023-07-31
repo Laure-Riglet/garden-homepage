@@ -6,22 +6,32 @@
 	--color-black: hsl(0, 0%, 0%);
 	--color-white: hsl(0, 0%, 100%);
 	--color-very-dark-gray: hsl(0, 0%, 27%);
+	--color-green: hsl(71, 46%, 50%);
+	--color-green-transluscent: hsla(71, 46%, 50%, 0.5);
+}
+
+/* measure units coefficients */
+:root {
+	--width-ratio: calc(100vw / 1440);
+	--height-ratio: calc(100vh / 800);
+	--average-ratio: calc((100vw / 1440 + 100vh / 800) / 2);
 }
 
 body {
-	min-height: 100vh;
-	min-width: 100vw;
+	height: 100vh;
+	width: 100vw;
 	margin: 0;
-	box-sizing: border-box;
 	color: var(--color-dark-gray);
 	background: var(--color-white);
 	transition: color 0.5s, background-color 0.5s;
 	font-family: 'League Spartan', sans-serif;
-	font-size: 0.8rem;
-	font-weight: 600;
+	font-size: calc(16.5 * var(--average-ratio));
+	font-weight: 500;
 	letter-spacing: -0.04rem;
 	line-height: 1.4;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	box-sizing: border-box;
 }

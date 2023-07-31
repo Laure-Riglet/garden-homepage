@@ -20,12 +20,21 @@ import Grid from './components/Grid.vue';
 <style scoped>
 nav {
 	position: absolute;
-	top: 0;
+	top: calc(40 * var(--height-ratio));
 	left: 0;
-	height: 140px;
-	width: 33%;
+	background-color: var(--color-green-transluscent);
+	height: calc(100 * var(--height-ratio));
+	width: calc(570 * var(--width-ratio));
+	border-radius: 0 calc(5 * var(--average-ratio))
+		calc(5 * var(--average-ratio)) 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+	div {
+		width: calc(570 * var(--width-ratio));
+	}
 }
 </style>
