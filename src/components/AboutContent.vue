@@ -45,8 +45,8 @@
 
 .header img {
 	margin: 0 calc(15 * var(--width-ratio)) calc(15 * var(--height-ratio)) 0;
-	height: calc(80 * var(--average-ratio));
-	width: calc(80 * var(--average-ratio));
+	height: calc(100 * var(--average-ratio));
+	width: calc(100 * var(--average-ratio));
 	animation: zoom 3.5s ease-in-out infinite;
 }
 

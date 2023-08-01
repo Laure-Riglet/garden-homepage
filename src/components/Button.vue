@@ -39,6 +39,7 @@ if (prop.type === 'next') {
 	width: calc(80 * var(--width-ratio));
 	height: calc(80 * var(--height-ratio));
 	background-color: var(--color-black);
+	border: 5px solid var(--color-black);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,6 +47,7 @@ if (prop.type === 'next') {
 
 .button:hover {
 	background-color: var(--color-green);
+	border: 5px solid var(--color-green);
 }
 
 .button svg {

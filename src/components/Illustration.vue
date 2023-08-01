@@ -1,8 +1,5 @@
 <!-- Illustration.vue -->
 <script setup>
-import { computed, ref, watch } from 'vue';
-import { store } from '../store';
-
 const props = defineProps({
 	imageUrl: {
 		type: String,

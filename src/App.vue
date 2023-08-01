@@ -20,6 +20,7 @@ import Grid from './components/Grid.vue';
 <style scoped>
 nav {
 	position: absolute;
+	z-index: 999;
 	top: calc(40 * var(--height-ratio));
 	left: 0;
 	background-color: var(--color-green-transluscent);
@@ -32,9 +33,9 @@ nav {
 	align-items: center;
 }
 
-@media screen and (max-width: 1440px) {
-	div {
-		width: calc(570 * var(--width-ratio));
+@media screen and (max-width: 800px) {
+	nav {
+		width: calc(700 * var(--width-ratio));
 	}
 }
 </style>

@@ -10,13 +10,16 @@ import data from '../data.json';
 
 const curImg = ref('curImg');
 const prevImg = ref('prevImg');
+const curCnt = ref('curCnt');
+const prevCnt = ref('prevCnt');
 
 watch(
 	() => store.currentMainContent,
 	(newValue, oldvalue) => {
-		console.log(oldvalue, newValue, data.mainContent.length - 1);
 		prevImg.value = '';
 		curImg.value = '';
+		prevCnt.value = '';
+		curCnt.value = '';
 
 		if (
 			(oldvalue < newValue &&
@@ -28,7 +31,9 @@ watch(
 			setTimeout(() => {
 				prevImg.value = 'prevImg slideoutleft';
 				curImg.value = 'curImg slideinright';
-			}, 10);
+				prevCnt.value = 'prevCnt fadeout';
+				curCnt.value = 'curCnt fadein';
+			}, 1);
 		} else if (
 			oldvalue > newValue ||
 			(newValue === data.mainContent.length - 1 && oldvalue === 0)
@@ -36,7 +41,9 @@ watch(
 			setTimeout(() => {
 				prevImg.value = 'prevImg slideoutright';
 				curImg.value = 'curImg slideinleft';
-			}, 10);
+				prevCnt.value = 'prevCnt fadeout';
+				curCnt.value = 'curCnt fadein';
+			}, 1);
 		}
 	}
 );
@@ -61,7 +68,8 @@ watch(
 				:imageClass="prevImg" />
 		</div>
 		<div class="div2">
-			<MainContent />
+			<MainContent :contentClass="curCnt" />
+			<MainContent :contentClass="prevCnt" />
 		</div>
 		<div class="div3"></div>
 		<div class="div4">
@@ -96,6 +104,7 @@ watch(
 	grid-area: 1 / 3 / 2 / 5;
 	width: calc(600 * var(--width-ratio));
 	height: calc(454 * var(--height-ratio));
+	position: relative;
 }
 .div3 {
 	grid-area: 3 / 1 / 4 / 2;
