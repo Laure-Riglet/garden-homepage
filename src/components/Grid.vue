@@ -1,54 +1,64 @@
+<!-- Grid.vue -->
 <script setup>
 import AboutContent from './AboutContent.vue';
 import Buttons from './Buttons.vue';
 import Illustration from './Illustration.vue';
 import MainContent from './MainContent.vue';
 import { store } from '../store';
+import { ref, watch } from 'vue';
 import data from '../data.json';
+
+const curImg = ref('curImg');
+const prevImg = ref('prevImg');
+
+watch(
+	() => store.currentMainContent,
+	(newValue, oldvalue) => {
+		console.log(oldvalue, newValue, data.mainContent.length - 1);
+		prevImg.value = '';
+		curImg.value = '';
+
+		if (
+			(oldvalue < newValue &&
+				!(
+					newValue === data.mainContent.length - 1 && oldvalue === 0
+				)) ||
+			(newValue === 0 && oldvalue === data.mainContent.length - 1)
+		) {
+			setTimeout(() => {
+				prevImg.value = 'prevImg slideoutleft';
+				curImg.value = 'curImg slideinright';
+			}, 10);
+		} else if (
+			oldvalue > newValue ||
+			(newValue === data.mainContent.length - 1 && oldvalue === 0)
+		) {
+			setTimeout(() => {
+				prevImg.value = 'prevImg slideoutright';
+				curImg.value = 'curImg slideinleft';
+			}, 10);
+		}
+	}
+);
 </script>
 
 <template>
 	<div class="parent">
 		<div class="div1">
+			<!-- Display the current image with transition -->
 			<Illustration
 				:imageUrl="
 					data.mainContent[store.currentMainContent].desktopImage
 				"
-				:imageAlt="
-					data.mainContent[store.currentMainContent].imageAlt
-				" />
-			<!-- <Illustration
-				:imageUrl="
-					data.mainContent[
-						store.currentMainContent - 1 >= 0
-							? store.currentMainContent - 1
-							: data.mainContent.length - 1
-					].desktopImage
-				"
-				:imageAlt="
-					data.mainContent[
-						store.currentMainContent - 1 >= 0
-							? store.currentMainContent - 1
-							: data.mainContent.length - 1
-					].imageAlt
-				" />
+				:imageAlt="data.mainContent[store.currentMainContent].imageAlt"
+				:imageClass="curImg" />
+			<!-- Display the previous image during transition -->
 			<Illustration
 				:imageUrl="
-					data.mainContent[
-						store.currentMainContent + 1 <=
-						data.mainContent.length - 1
-							? store.currentMainContent + 1
-							: data.mainContent.length - 1
-					].desktopImage
+					data.mainContent[store.previousMainContent].desktopImage
 				"
-				:imageAlt="
-					data.mainContent[
-						store.currentMainContent + 1 <=
-						data.mainContent.length - 1
-							? store.currentMainContent + 1
-							: data.mainContent.length - 1
-					].imageAlt
-				" /> -->
+				:imageAlt="data.mainContent[store.previousMainContent].imageAlt"
+				:imageClass="prevImg" />
 		</div>
 		<div class="div2">
 			<MainContent />
@@ -80,6 +90,7 @@ import data from '../data.json';
 	width: calc(840 * var(--width-ratio));
 	height: calc(534 * var(--height-ratio));
 	overflow: hidden;
+	position: relative;
 }
 .div2 {
 	grid-area: 1 / 3 / 2 / 5;
