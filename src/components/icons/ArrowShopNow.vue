@@ -12,18 +12,24 @@
 <style scoped>
 @keyframes move {
 	0% {
-		transform: translateX(calc(0 * var(--average-ratio)));
+		transform: translateX(calc(0 * var(--desktop-average-ratio)));
 	}
 	50% {
-		transform: translateX(calc(10 * var(--average-ratio)));
+		transform: translateX(calc(10 * var(--desktop-average-ratio)));
 	}
 	100% {
-		transform: translateX(calc(0 * var(--average-ratio)));
+		transform: translateX(calc(0 * var(--desktop-average-ratio)));
 	}
 }
 svg {
 	animation: move 1.5s infinite;
-	height: calc(13 * 1.2 * var(--average-ratio));
-	width: calc(40 * 1.2 * var(--average-ratio));
+	height: calc(13 * 1.2 * var(--desktop-average-ratio));
+	width: calc(40 * 1.2 * var(--desktop-average-ratio));
+}
+@media screen and (max-width: 500px) {
+	svg {
+		height: calc(13 * 1.2 * var(--mobile-average-ratio));
+		width: calc(40 * 1.2 * var(--mobile-average-ratio));
+	}
 }
 </style>

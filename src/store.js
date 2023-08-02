@@ -5,6 +5,8 @@ export const store = reactive({
 
     currentMainContent: 0,
     previousMainContent: 0,
+    displayWidth: window.innerWidth,
+    navOpen: false,
 
     increment() {
         this.previousMainContent = this.currentMainContent;
@@ -22,5 +24,9 @@ export const store = reactive({
         } else {
             this.currentMainContent = data.mainContent.length - 1;
         }
+    },
+
+    switchNav() {
+        this.navOpen = !this.navOpen;
     }
 });

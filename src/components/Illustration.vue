@@ -67,7 +67,7 @@ img {
 }
 
 .curImg {
-	z-index: 99;
+	z-index: 1;
 }
 
 .slideinleft {

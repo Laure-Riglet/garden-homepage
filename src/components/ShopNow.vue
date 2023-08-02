@@ -24,10 +24,18 @@ a:hover {
 }
 
 p {
-	margin-right: calc(25 * var(--width-ratio));
-	font-size: calc(17 * var(--average-ratio));
+	margin-right: calc(25 * var(--desktop-width-ratio));
+	font-size: calc(17 * var(--desktop-average-ratio));
 	font-weight: 600;
-	letter-spacing: calc(10 * var(--average-ratio));
+	letter-spacing: calc(10 * var(--desktop-average-ratio));
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+	p {
+		margin-right: calc(25 * var(--mobile-width-ratio));
+		font-size: calc(17 * var(--mobile-average-ratio));
+		letter-spacing: calc(10 * var(--mobile-average-ratio));
+	}
 }
 </style>
