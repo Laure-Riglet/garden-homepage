@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
 
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
@@ -12,9 +12,13 @@
 
 /* measure units coefficients */
 :root {
-	--width-ratio: calc(100vw / 1440);
-	--height-ratio: calc(100vh / 800);
-	--average-ratio: calc((100vw / 1440 + 100vh / 800) / 2);
+	--desktop-width-ratio: calc(100vw / 1440);
+	--desktop-height-ratio: calc(100vh / 800);
+	--desktop-average-ratio: calc((100vw / 1440 + 100vh / 800) / 2);
+
+	--mobile-width-ratio: calc(100vw / 375);
+	--mobile-height-ratio: calc(100vh / 667);
+	--mobile-average-ratio: calc((100vw / 375 + 100vh / 667) / 2);
 }
 
 body {
@@ -25,7 +29,7 @@ body {
 	background: var(--color-white);
 	transition: color 0.5s, background-color 0.5s;
 	font-family: 'League Spartan', sans-serif;
-	font-size: calc(16.5 * var(--average-ratio));
+	font-size: calc(16.5 * var(--desktop-average-ratio));
 	font-weight: 500;
 	letter-spacing: -0.04rem;
 	line-height: 1.4;
@@ -34,4 +38,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
 	box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		overflow: auto;
+		font-size: calc(16.5 * var(--mobile-average-ratio));
+	}
 }

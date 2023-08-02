@@ -75,8 +75,9 @@ watch(
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: calc(100 * var(--height-ratio)) calc(60 * var(--width-ratio))
-		calc(60 * var(--height-ratio));
+	padding: calc(100 * var(--desktop-height-ratio))
+		calc(60 * var(--desktop-width-ratio))
+		calc(60 * var(--desktop-height-ratio));
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -104,7 +105,7 @@ watch(
 	opacity: 0;
 }
 .curCnt {
-	z-index: 99;
+	z-index: 1;
 }
 
 .fadein {
@@ -116,16 +117,29 @@ watch(
 }
 
 h1 {
-	font-size: calc(46 * var(--average-ratio));
+	font-size: calc(46 * var(--desktop-average-ratio));
 	font-weight: 700;
-	letter-spacing: calc(-2 * var(--average-ratio));
+	letter-spacing: calc(-2 * var(--desktop-average-ratio));
 	line-height: 1;
 	color: var(--color-black);
 }
 
 @media screen and (max-width: 1430px) {
 	h1 {
-		font-size: calc(42 * var(--average-ratio));
+		font-size: calc(42 * var(--desktop-average-ratio));
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		padding: calc(50 * var(--mobile-height-ratio))
+			calc(30 * var(--mobile-width-ratio))
+			calc(75 * var(--mobile-height-ratio));
+	}
+
+	h1 {
+		font-size: calc(33 * var(--mobile-average-ratio));
+		letter-spacing: calc(-2 * var(--mobile-average-ratio));
 	}
 }
 </style>

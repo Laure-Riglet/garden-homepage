@@ -36,8 +36,8 @@ if (prop.type === 'next') {
 
 <style scoped>
 .button {
-	width: calc(80 * var(--width-ratio));
-	height: calc(80 * var(--height-ratio));
+	width: calc(80 * var(--desktop-width-ratio));
+	height: calc(80 * var(--desktop-height-ratio));
 	background-color: var(--color-black);
 	border: 5px solid var(--color-black);
 	display: flex;
@@ -52,15 +52,26 @@ if (prop.type === 'next') {
 
 .button svg {
 	display: inline-block;
-
 	transition: 0.5s ease-in-out;
 	fill: var(--color-white);
-	width: calc(30 * var(--average-ratio));
-	height: calc(30 * var(--average-ratio));
+	width: calc(30 * var(--desktop-average-ratio));
+	height: calc(30 * var(--desktop-average-ratio));
 }
 
 .button:hover svg {
 	transform: scale(1.2);
 	transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+	.button {
+		width: calc(56 * var(--mobile-width-ratio));
+		height: calc(56 * var(--mobile-height-ratio));
+	}
+
+	.button svg {
+		width: calc(20 * var(--mobile-average-ratio));
+		height: calc(20 * var(--mobile-average-ratio));
+	}
 }
 </style>

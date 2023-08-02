@@ -12,6 +12,12 @@ a {
 
 .arboretum {
 	color: var(--color-green);
-	font-size: calc(18 * var(--average-ratio));
+	font-size: calc(18 * var(--desktop-average-ratio));
 	font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+	.arboretum {
+		font-size: calc(18 * var(--mobile-average-ratio));
+	}
 }
