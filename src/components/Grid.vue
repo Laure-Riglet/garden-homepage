@@ -132,7 +132,7 @@ watch(
 	width: calc(420 * var(--desktop-width-ratio));
 	height: calc(266 * var(--desktop-height-ratio));
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url('./src/assets/img/image-about-dark.webp');
+		url('/img/image-about-dark.webp');
 	background-size: cover;
 	background-position: center center;
 }
@@ -151,7 +151,7 @@ watch(
 			hsla(71, 46%, 50%, 0.3),
 			hsla(71, 46%, 50%, 0.3)
 		),
-		url('./src/assets/img/image-about-light.webp');
+		url('/img/image-about-light.webp');
 	background-size: cover;
 	background-position: center center;
 }
@@ -196,7 +196,7 @@ watch(
 				rgba(0, 0, 0, 0.3),
 				rgba(0, 0, 0, 0.3)
 			),
-			url('./src/assets/img/image-about-dark.webp');
+			url('./img/image-about-dark.webp');
 	}
 
 	.div4 {
@@ -213,7 +213,7 @@ watch(
 				hsla(71, 46%, 50%, 0.3),
 				hsla(71, 46%, 50%, 0.3)
 			),
-			url('./src/assets/img/image-about-light.webp');
+			url('./img/image-about-light.webp');
 	}
 
 	.div6 {
