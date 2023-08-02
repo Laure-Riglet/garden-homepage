@@ -105,7 +105,7 @@ watch(
 <style scoped>
 .parent {
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 100 * var(--desktop-height-ratio));
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(3, auto);
@@ -196,7 +196,7 @@ watch(
 				rgba(0, 0, 0, 0.3),
 				rgba(0, 0, 0, 0.3)
 			),
-			url('./img/image-about-dark.webp');
+			url('/img/image-about-dark.webp');
 	}
 
 	.div4 {
@@ -213,7 +213,7 @@ watch(
 				hsla(71, 46%, 50%, 0.3),
 				hsla(71, 46%, 50%, 0.3)
 			),
-			url('./img/image-about-light.webp');
+			url('/img/image-about-light.webp');
 	}
 
 	.div6 {
