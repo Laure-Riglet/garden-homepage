@@ -1,12 +1,12 @@
 <!-- Grid.vue -->
 <script setup>
 import AboutContent from './AboutContent.vue';
-import Buttons from './Buttons.vue';
+import Buttons from './Elements/Buttons.vue';
 import Illustration from './Illustration.vue';
 import MainContent from './MainContent.vue';
-import { store } from '../store';
+import { store } from '../../store';
 import { ref, watch } from 'vue';
-import data from '../data.json';
+import data from '../../data.json';
 
 const curImg = ref('curImg');
 const prevImg = ref('prevImg');

@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div class="header">
-			<img src="../assets/img/logo/logo-600x600.webp" alt="logo" />
+			<img src="/img/logo/logo-600x600.webp" alt="logo" />
 			<h3>About our garden center</h3>
 		</div>
 		<p>

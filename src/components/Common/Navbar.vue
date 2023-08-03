@@ -1,6 +1,6 @@
 <script setup>
-import CloseCross from './icons/CloseCross.vue';
-import NavLinks from './NavLinks.vue';
+import CloseCross from '../Icons/CloseCross.vue';
+import NavLinks from './Elements/NavLinks.vue';
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup>
-import { store } from '../store';
-import ArrowLeft from './icons/ArrowLeft.vue';
-import ArrowRight from './icons/ArrowRight.vue';
+import { store } from '../../../store';
+import ArrowLeft from '../../Icons/ArrowLeft.vue';
+import ArrowRight from '../../Icons/ArrowRight.vue';
 
 // Define the props and their types
 const prop = defineProps({

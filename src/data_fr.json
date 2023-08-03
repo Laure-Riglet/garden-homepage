@@ -1,0 +1,39 @@
+{
+	"mainContent": [
+		{
+			"title": "Discover a world of natural beauty",
+			"description": "Bienvenue chez arboretum, où vous trouverez une sélection variée d'arbres et de plantes pour transformer votre espace extérieur en une oasis de paix. Que vous cherchiez à créer un jardin luxuriant, à ajouter de l'ombre à votre patio ou à améliorer la beauté de votre paysage, nous avons les options parfaites pour vous.",
+			"desktopImage": "/img/desktop-image-hero-1.webp",
+			"mobileImage": "/img/mobile-image-hero-1.webp",
+			"imageAlt": "Trois arbres en pots sur un mur en béton, dans le style d'octane render, d'inspiration zen, image uhd, matériaux banals, ingénierie/construction et design, tondo, paysages riches en textures."
+		},
+		{
+			"title": "Bringing nature's beauty to your doorstep",
+			"description": "arboretum se consacre à la fourniture d'une qualité et d'une variété inégalées pour les amoureux de la nature à travers le pays. Nos experts combinent connaissances et passion pour donner vie à votre vision du jardin. Créez un espace extérieur dans votre propre style avec notre collection et faites de votre propriété le reflet de votre amour pour la nature.",
+			"desktopImage": "/img/desktop-image-hero-2.webp",
+			"mobileImage": "/img/mobile-image-hero-2.webp",
+			"imageAlt": "Une serre avec des arbres poussant en rangées, dans le style de la résolution 8k, imagerie commerciale, lens flares, caras ionut, image uhd, matières premières, govaert flinck."
+		},
+		{
+			"title": "Serving garden enthusiasts worldwide",
+			"description": "Avec des sites répartis dans le monde entier, il est facile pour vous de trouver les arbres parfaits pour votre jardin. Localement, arboretum est présent dans de nombreuses villes à travers le pays. Utilisez notre localisateur de magasins pour trouver la succursale la plus proche. Vous avez des questions ? N'hésitez pas à nous contacter dès aujourd'hui.",
+			"desktopImage": "/img/desktop-image-hero-3.webp",
+			"mobileImage": "/img/mobile-image-hero-3.webp",
+			"imageAlt": "Arbre au milieu d'un jardin, dans le style de l'architecture et du design postmodernes, image uhd, design danois, tons de terre, tableaux vivants, ambiance luxueuse et atmosphérique."
+		},
+		{
+			"title": "Nurtured with care and expertise",
+			"description": "arboretum est fier d'utiliser les meilleurs matériaux et pratiques pour assurer la santé et la vitalité de chaque arbre que nous offrons. Avec des décennies d'expérience dans l'industrie, nous comprenons ce dont les arbres ont besoin pour prospérer dans divers environnements",
+			"desktopImage": "/img/desktop-image-hero-4.webp",
+			"mobileImage": "/img/mobile-image-hero-4.webp",
+			"imageAlt": "Une pièce est remplie de cinq arbres blancs en pot, dans le style des sculptures sphériques, du minimalisme zen, de la lumière dorée, de wlad safronow, des sculptures organiques en pierre, de la représentation photoréaliste, de la simplicité élégante."
+		},
+		{
+			"title": "Discover the beauty of our trees",
+			"description": "Notre collection diversifiée comprend une variété d'arbres pour répondre aux besoins de votre jardin. Créez un paysage qui est non seulement visuellement magnifique, mais qui soutient également la biodiversité locale. Des arbres à feuillage persistant classiques aux arbres fruitiers majestueux, les spécialistes des produits de l'arboretum sont à votre disposition pour vous aider à créer le jardin de vos rêves",
+			"desktopImage": "/img/desktop-image-hero-5.webp",
+			"mobileImage": "/img/mobile-image-hero-5.webp",
+			"imageAlt": "Arbres et plantes d'intérieur devant une baie vitrée, dans le style de rendus réalistes, fenêtres panoramiques, bois courbé, abondance botanique, art phénicien, palette de couleurs neutres, porcelaine."
+		}
+	]
+}
