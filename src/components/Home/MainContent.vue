@@ -36,10 +36,10 @@ const balancedTitle = computed(() => {
 const highlightedDescription = computed(() => {
 	const splitText = text.value.split(' ');
 	splitText.forEach((word, index) => {
-		if (word.includes('arboretum')) {
+		if (word.includes('agarden')) {
 			splitText[index] = word.replace(
-				'arboretum',
-				'<span class="arboretum">arboretum</span>'
+				'agarden',
+				'<span class="agarden">agarden</span>'
 			);
 		}
 	});

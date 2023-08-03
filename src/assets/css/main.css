@@ -10,14 +10,14 @@ a {
 	text-decoration: none;
 }
 
-.arboretum {
+.agarden {
 	color: var(--color-green);
 	font-size: calc(18 * var(--desktop-average-ratio));
 	font-weight: 700;
 }
 
 @media screen and (max-width: 500px) {
-	.arboretum {
+	.agarden {
 		font-size: calc(18 * var(--mobile-average-ratio));
 	}
 }

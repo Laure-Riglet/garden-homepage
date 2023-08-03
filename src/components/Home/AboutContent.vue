@@ -5,7 +5,7 @@
 			<h3>About our garden center</h3>
 		</div>
 		<p>
-			At <span class="arboretum">arboretum</span>, we believe in the
+			At <span class="agarden">agarden</span>, we believe in the
 			harmonious integration of nature into everyday life. Our collection
 			features a range of trees and plants that blend form and function to
 			suit your individual taste. Make your garden unique or choose a

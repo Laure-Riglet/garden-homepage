@@ -1,6 +1,6 @@
 <template>
 	<div class="logo">
-		<span>arboretum</span>
+		<span>agarden</span>
 	</div>
 </template>
 

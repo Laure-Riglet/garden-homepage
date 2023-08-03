@@ -1,4 +1,4 @@
-# Garden homepage
+# _agarden_ homepage
 
 ## Project Description
 
@@ -21,3 +21,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Demo
+
+Deployed [here](https://lucky-pothos-9bca0c.netlify.app/) on Netlify.
