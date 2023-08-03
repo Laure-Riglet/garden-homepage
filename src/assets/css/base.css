@@ -13,8 +13,8 @@
 /* measure units coefficients */
 :root {
 	--desktop-width-ratio: calc(100vw / 1440);
-	--desktop-height-ratio: calc(100vh / 800);
-	--desktop-average-ratio: calc((100vw / 1440 + 100vh / 800) / 2);
+	--desktop-height-ratio: calc(100vh / 900);
+	--desktop-average-ratio: calc((100vw / 1440 + 100vh / 900) / 2);
 
 	--mobile-width-ratio: calc(100vw / 375);
 	--mobile-height-ratio: calc(100vh / 667);

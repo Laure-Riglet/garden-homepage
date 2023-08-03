@@ -1,5 +1,5 @@
 <script setup>
-import ArrowShopNow from './icons/ArrowShopNow.vue';
+import ArrowShopNow from '../Icons/ArrowShopNow.vue';
 </script>
 
 <template>

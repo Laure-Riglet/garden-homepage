@@ -1,12 +1,12 @@
 <!-- Grid.vue -->
 <script setup>
 import AboutContent from './AboutContent.vue';
-import Buttons from './Buttons.vue';
+import Buttons from './Elements/Buttons.vue';
 import Illustration from './Illustration.vue';
 import MainContent from './MainContent.vue';
-import { store } from '../store';
+import { store } from '../../store';
 import { ref, watch } from 'vue';
-import data from '../data.json';
+import data from '../../data.json';
 
 const curImg = ref('curImg');
 const prevImg = ref('prevImg');
@@ -105,7 +105,7 @@ watch(
 <style scoped>
 .parent {
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 100 * var(--desktop-height-ratio));
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(3, auto);
@@ -132,7 +132,7 @@ watch(
 	width: calc(420 * var(--desktop-width-ratio));
 	height: calc(266 * var(--desktop-height-ratio));
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url('./src/assets/img/image-about-dark.webp');
+		url('/img/image-about-dark.webp');
 	background-size: cover;
 	background-position: center center;
 }
@@ -151,7 +151,7 @@ watch(
 			hsla(71, 46%, 50%, 0.3),
 			hsla(71, 46%, 50%, 0.3)
 		),
-		url('./src/assets/img/image-about-light.webp');
+		url('/img/image-about-light.webp');
 	background-size: cover;
 	background-position: center center;
 }
@@ -196,7 +196,7 @@ watch(
 				rgba(0, 0, 0, 0.3),
 				rgba(0, 0, 0, 0.3)
 			),
-			url('./src/assets/img/image-about-dark.webp');
+			url('/img/image-about-dark.webp');
 	}
 
 	.div4 {
@@ -213,7 +213,7 @@ watch(
 				hsla(71, 46%, 50%, 0.3),
 				hsla(71, 46%, 50%, 0.3)
 			),
-			url('./src/assets/img/image-about-light.webp');
+			url('/img/image-about-light.webp');
 	}
 
 	.div6 {

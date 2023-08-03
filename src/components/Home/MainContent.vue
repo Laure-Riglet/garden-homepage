@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
-import { store } from '../store';
-import data from '../data.json';
+import { store } from '../../store';
+import data from '../../data.json';
 import ShopNow from './ShopNow.vue';
 
 const props = defineProps({

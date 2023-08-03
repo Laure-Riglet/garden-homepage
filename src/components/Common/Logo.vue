@@ -8,10 +8,10 @@
 .logo {
 	position: absolute;
 	z-index: 4;
-	top: calc(40 * var(--desktop-height-ratio));
+	top: calc(20 * var(--desktop-height-ratio));
 	left: 0;
 	width: auto;
-	height: calc(100 * var(--desktop-height-ratio));
+	height: calc(80 * var(--desktop-height-ratio));
 	display: flex;
 	align-items: center;
 	color: var(--color-white);

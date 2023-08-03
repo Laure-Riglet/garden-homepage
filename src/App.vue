@@ -1,8 +1,8 @@
 <script setup>
-import Logo from './components/Logo.vue';
-import Navbar from './components/Navbar.vue';
-import Grid from './components/Grid.vue';
-import Hamburger from './components/icons/Hamburger.vue';
+import Logo from './components/Common/Logo.vue';
+import Navbar from './components/Common/Navbar.vue';
+import Grid from './components/Home/Grid.vue';
+import Hamburger from './components/Icons/Hamburger.vue';
 import { store } from './store';
 import { computed } from 'vue';
 
@@ -45,13 +45,11 @@ header {
 nav {
 	position: absolute;
 	z-index: 2;
-	top: calc(40 * var(--desktop-height-ratio));
+	top: calc(20 * var(--desktop-height-ratio));
 	left: 0;
 	background-color: var(--color-green-transluscent);
-	height: calc(100 * var(--desktop-height-ratio));
+	height: calc(80 * var(--desktop-height-ratio));
 	width: calc(475 * var(--desktop-width-ratio));
-	border-radius: 0 calc(5 * var(--desktop-average-ratio))
-		calc(5 * var(--desktop-average-ratio)) 0;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -81,7 +79,6 @@ nav {
 		background-color: var(--color-white);
 		height: calc(110 * var(--mobile-height-ratio));
 		width: 100vw;
-		border-radius: 0;
 		justify-content: space-around;
 		transition: 1s ease-in-out;
 	}
